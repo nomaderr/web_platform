@@ -13,8 +13,8 @@ const workSans = Work_Sans({
 })
 
 export const metadata = {
-  title: 'Мой сайт',
-  description: 'Портфолио, блог и всё остальное',
+  title: 'nomaderr',
+  description: 'Personal website',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
