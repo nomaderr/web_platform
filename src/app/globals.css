@@ -136,3 +136,23 @@ html {
     }
   }
 }
+
+
+@layer utilities {
+  html:not(.dark) .bg-\[\#f2f2f2\] {
+    background-color: #f2f2f2 !important;
+  }
+
+  html.dark .bg-\[\#2a2a2a\] {
+    background-color: #2a2a2a !important;
+  }
+
+  html:not(.dark) .text-\[\#1c1c1e\] {
+    color: #1c1c1e !important;
+  }
+
+  html.dark .text-white {
+    color: #ffffff !important;
+  }
+}
+
