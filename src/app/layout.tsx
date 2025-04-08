@@ -29,11 +29,10 @@
 
 
 // src/app/layout.tsx
-// src/app/layout.tsx
 import './globals.css'
 import { Work_Sans } from 'next/font/google'
 import { ThemeProvider } from '@/components/theme-provider'
-import { ThemeScript } from '../components/theme-script'
+import { ThemeScript } from '@/components/theme-script'
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -48,12 +47,12 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="light" suppressHydrationWarning>
       <head>
         <ThemeScript />
       </head>
       <body className={workSans.variable}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}
         </ThemeProvider>
       </body>

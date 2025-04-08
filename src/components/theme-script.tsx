@@ -1,6 +1,9 @@
 // src/components/theme-script.tsx
 'use client'
 
+// src/components/theme-script.tsx
+'use client'
+
 export function ThemeScript() {
   return (
     <script
@@ -12,7 +15,7 @@ export function ThemeScript() {
               var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
               var html = document.documentElement;
 
-              if (theme === 'dark' || (!theme && systemPrefersDark)) {
+              if (theme === 'light' || (!theme && systemPrefersDark)) {
                 html.classList.add('dark');
               } else {
                 html.classList.remove('dark');
@@ -22,5 +25,5 @@ export function ThemeScript() {
         `,
       }}
     />
-  )
+  );
 }
